@@ -14,7 +14,7 @@ describe("测试描述", function(){
 
     var particularNums = [3,5,7];
     var invalidInput = [3,3,7];
-``
+
     it("Test_case_1", function(){
 
         var result = main(particularNums,9);
@@ -67,6 +67,14 @@ describe("测试描述", function(){
 
         var result = main(particularNums,35);
         var expect_string = 'BuzzWhizz\n';
+
+        expect(expect_string).to.equal(result);
+    });
+
+    it("Test_case_8", function(){
+
+        var result = main(particularNums,105);
+        var expect_string = 'FizzBuzzWhizz\n';
 
         expect(expect_string).to.equal(result);
     });
