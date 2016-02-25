@@ -65,7 +65,7 @@ describe("测试描述", function(){
 
     it("Test_case_7", function(){
 
-        var result = main(particularNums,35);
+        var result = main(particularNums,28);
         var expect_string = 'BuzzWhizz\n';
 
         expect(expect_string).to.equal(result);
@@ -75,6 +75,14 @@ describe("测试描述", function(){
 
         var result = main(particularNums,105);
         var expect_string = 'FizzBuzzWhizz\n';
+
+        expect(expect_string).to.equal(result);
+    });
+
+    it("Test_case_9", function(){
+
+        var result = main(particularNums,35);
+        var expect_string = 'Fizz\n';
 
         expect(expect_string).to.equal(result);
     });
