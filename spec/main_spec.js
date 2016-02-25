@@ -13,6 +13,7 @@ describe("测试描述", function(){
     sinon.spy(console, 'log');
 
     var particularNums = [3,5,7];
+    var invalidInput = [3,3,7];
 ``
     it("Test_for_3", function(){
 
@@ -40,8 +41,8 @@ describe("测试描述", function(){
 
     it("Test_for_satisfied_three_nums", function(){
 
-        var result = main(particularNums,9);
-        var expect_string = 'invalid input';
+        var result = main(invalidInput,9);
+        var expect_string = 'Invalid input';
 
         expect(expect_string).to.equal(result);
     });
