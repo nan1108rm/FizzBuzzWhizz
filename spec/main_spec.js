@@ -65,7 +65,7 @@ describe("测试描述", function(){
 
     it("Test_case_7", function(){
 
-        var result = main(particularNums,28);
+        var result = main(particularNums,70);
         var expect_string = 'BuzzWhizz\n';
 
         expect(expect_string).to.equal(result);
