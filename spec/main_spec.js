@@ -15,7 +15,7 @@ describe("测试描述", function(){
     var particularNums = [3,5,7];
     var invalidInput = [3,3,7];
 ``
-    it("Test_for_3", function(){
+    it("Test_case_1", function(){
 
         var result = main(particularNums,9);
         var expect_string = 'Fizz\n';
@@ -23,7 +23,7 @@ describe("测试描述", function(){
         expect(expect_string).to.equal(result);
     });
 
-    it("Test_for_5", function(){
+    it("Test_case_2", function(){
 
         var result = main(particularNums,5);
         var expect_string = 'Buzz\n';
@@ -31,7 +31,7 @@ describe("测试描述", function(){
         expect(expect_string).to.equal(result);
     });
 
-    it("Test_for_7", function(){
+    it("Test_case_3", function(){
 
         var result = main(particularNums,7);
         var expect_string = 'Whizz\n';
@@ -39,10 +39,34 @@ describe("测试描述", function(){
         expect(expect_string).to.equal(result);
     });
 
-    it("Test_for_satisfied_three_nums", function(){
+    it("Test_case_4", function(){
 
         var result = main(invalidInput,9);
         var expect_string = 'Invalid input';
+
+        expect(expect_string).to.equal(result);
+    });
+
+    it("Test_case_5", function(){
+
+        var result = main(particularNums,15);
+        var expect_string = 'FizzBuzz\n';
+
+        expect(expect_string).to.equal(result);
+    });
+
+    it("Test_case_6", function(){
+
+        var result = main(particularNums,21);
+        var expect_string = 'FizzWhizz\n';
+
+        expect(expect_string).to.equal(result);
+    });
+
+    it("Test_case_7", function(){
+
+        var result = main(particularNums,35);
+        var expect_string = 'BuzzWhizz\n';
 
         expect(expect_string).to.equal(result);
     });
